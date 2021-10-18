@@ -11,7 +11,7 @@ export const Result: React.FC<IGameState> = ({
                                                  whoWon,
                                              }) => (
     <>
-        <h3 >You choice: {userChoice}</h3>
+        <h3>You choice: {userChoice}</h3>
         <h3>PC choice: {pcChoice}</h3>
         <h4>Round winner: {roundWinner}</h4>
         <h4>User point: {userPoint}</h4>

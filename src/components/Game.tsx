@@ -75,14 +75,7 @@ export default class Game extends Component {
 
     render() {
         const {
-            userChoice,
-            pcChoice,
-            roundWinner,
-            userPoint,
-            pcPoint,
-            countRounds,
-            whoWon,
-            isHidden,
+            userChoice, pcChoice, roundWinner, userPoint, pcPoint, countRounds, whoWon, isHidden,
         }: Readonly<IGameState> = this.state;
         return (
             <>
@@ -108,5 +101,4 @@ export default class Game extends Component {
             </>
         );
     }
-
 }
