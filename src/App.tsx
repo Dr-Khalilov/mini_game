@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Game from "./components/Game";
+import Game from './components/Game';
 
 export const App: React.FC = () => (
-    <div className="App">
-        <Game/>
+    <div className='App'>
+        <Game />
     </div>
 );
 
