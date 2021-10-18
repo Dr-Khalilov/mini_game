@@ -19,7 +19,7 @@ export default class Game extends Component {
     }
 
     startGame = ({ target: { id: userChoice } }: string | any) => {
-        const { roundLimit, countRounds, pcPoint, userPoint, isHidden }: Readonly<IGameState> = this.state;
+        const { roundLimit, countRounds, pcPoint, userPoint }: Readonly<IGameState> = this.state;
         this.setState({ userChoice });
         const pcChoice: string = ['cavalry', 'archers', 'pikeman'][Math.floor(Math.random() * 3)];
         this.setState({ pcChoice });
@@ -89,14 +89,22 @@ export default class Game extends Component {
                 <Result userChoice={userChoice} pcPoint={pcPoint} roundWinner={roundWinner} pcChoice={pcChoice}
                         userPoint={userPoint} countRounds={countRounds} whoWon={whoWon} />
                 {isHidden ? null : <div>
-                    <button onClick={e => this.startGame(e)} id='cavalry'>Cavalry</button>
+                    <button onClick={e => this.startGame(e)} id='cavalry'
+                            className='waves-effect waves-light btn-large'>Cavalry
+                    </button>
                     &nbsp;
-                    <button onClick={e => this.startGame(e)} id='archers'>Archers</button>
+                    <button onClick={e => this.startGame(e)} id='archers'
+                            className='waves-effect waves-light btn-large'>Archers
+                    </button>
                     &nbsp;
-                    <button onClick={e => this.startGame(e)} id='pikeman'>Pikeman</button>
+                    <button onClick={e => this.startGame(e)} id='pikeman'
+                            className='waves-effect waves-light btn-large'>Pikeman
+                    </button>
                 </div>
                 }
-                <button onClick={this.resetGame}>Reset Game</button>
+                <button onClick={this.resetGame}
+                        className='btn waves-effect waves-light btn-large red mt'>Reset Game
+                </button>
             </>
         );
     }

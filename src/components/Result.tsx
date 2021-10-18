@@ -11,12 +11,12 @@ export const Result: React.FC<IGameState> = ({
                                                  whoWon,
                                              }) => (
     <>
-        <h1>You choice: {userChoice}</h1>
-        <h1>PC choice: {pcChoice}</h1>
-        <h2>Round winner: {roundWinner}</h2>
-        <h2>User point: {userPoint}</h2>
-        <h2>PC point: {pcPoint}</h2>
-        <h2>Count rounds: {countRounds}</h2>
-        <h2>Who won: {whoWon}</h2>
+        <h3 >You choice: {userChoice}</h3>
+        <h3>PC choice: {pcChoice}</h3>
+        <h4>Round winner: {roundWinner}</h4>
+        <h4>User point: {userPoint}</h4>
+        <h4>PC point: {pcPoint}</h4>
+        <h4>Count rounds: {countRounds}</h4>
+        <h4>Who won: {whoWon}</h4>
     </>
 );
